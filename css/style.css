@@ -1,0 +1,385 @@
+ *{
+    box-sizing: border-box;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+ body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 4.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: orangered;
+}
+
+button:hover{
+    background-color: rgb(227, 61, 0);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    color: white;
+    background-color: rgb(221, 59, 0);
+}
+
+header img{
+    height: 70px;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-family: 'Delius', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 1.65em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 35px 0;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: rgb(223, 223, 223);
+}
+
+#booking{
+    padding: 30px 3px;
+    height: 65vh;
+    text-align: left;
+    color: whitesmoke;
+    background-image: url(../assets/fondoreservas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.radio-btn{
+
+    margin: 0 20px;
+
+}
+.radio-btn .btn{
+
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+
+}
+
+.radio-btn .btn::after{
+
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    border: 3px solid whitesmoke;
+    visibility: visible;
+    border-radius: 50%;
+
+}
+
+.radio-btn .btn:checked::after{
+
+    content: '';
+    background-color: #000;
+    transition: 0.5s;
+
+}
+
+.booking-form{
+    padding: 1px 20px 20px;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 10px;
+    color: whitesmoke;
+}
+
+.input::placeholder{
+    color: whitesmoke;
+}
+
+.input-grp{
+    width: 160px;
+    display: inline-block;
+}
+
+.form-control{
+    font-size: 12px;
+    border-radius: 0;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: none;
+}
+
+.input-grp button{
+    padding: 5px 5px 5px;
+    font-size: 1em;
+}
+
+#elige{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: whitesmoke;
+    text-align: center;
+}
+
+#elige h2{
+    font-size: 2.8em;
+}
+
+
+#elige .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#elige h3{
+    margin-top: 0;
+}
+
+#elige p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#elige .card{
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/lima.jpg");
+
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/bogota.jpeg");
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/bsas.jpg");
+
+}
+
+.card button{
+    padding: 1px 0;
+    margin: 0 auto;
+    width: 80px;
+    font-size: 0.75em;
+}
+
+#nosotros{
+    padding: 30px 20px 0;
+   margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 65vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../assets/fondoreservas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#nosotros h1{
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+#nosotros button{
+    margin: 0 auto;
+    font-size: 1.75em;
+}
+
+#descripcion{
+    margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 45vh;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+     )
+     ,url("../assets/descripcion.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #descripcion h2{
+    padding: 30px 20px 0;
+     margin: 0 auto;
+     color: whitesmoke;
+ }
+
+ #descripcion p{
+    padding: 25px 15px 15px;
+    font-size: 0.80em;
+ }
+ 
+footer{
+    background-color: rgb(221,59,0);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: whitesmoke;
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    #elige .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 35%;
+        padding: 35px 35px 35px;
+    }
+
+    #elige p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #elige .destinos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #elige .card{
+        padding: 15px;
+    }
+    #nosotros h1{
+        font-size: 5em;
+    }
+
+
+    #descripcion .container{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(0, 0, 81);
+    }
+
+    #descripcion .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #descripcion h2{
+        margin-top: 0px;
+    }
+
+    #descripcion .img-container{
+        background-image: url("../assets/descripcion.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+}
